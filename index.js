@@ -10,7 +10,6 @@
 
 // First, let's create a "userName" variable. Set it equal to "World".
 
-var userName = "World";
 
 /** To get the value of the input element, we first have to get the input element from the HTML document as a variable.
   * document is a built-in object in JS that allows our JS code to interact with the HTML itself.
@@ -20,20 +19,15 @@ var userName = "World";
   * Inside of the ( ) put the html id of the element you want to get in quotation marks.
   */
 
-var inputElement = document.getElementById('name-input')
 
 // Next, let's get the element in the header that we want to use to print userName. It's id is "name-output"
 
-var outputElement = document.getElementById("name-output")
 
 // Let's get the value of our input and set userName equal to it!
 
-userName = inputElement.value
 
 // Now let's check our work: Let's console.log() our userName variable. Put userName inside the ( ) without quotes.
 
-console.log("We are getting the value of the input!")
-console.log(userName)
 
 // Notice an issue? We're setting userName equal to the value of inputElement, but that only happens one time. Let's fix that.
 // To do this, we use events and functions. "Events" are various signals from the browser that you can use to get things to happen, such as clicking, typing, or changing values.
@@ -42,16 +36,12 @@ console.log(userName)
 // The parantheses store "parameters," whatever variables we need to give to the function so that it can do what we want. For example, the parameter of getElementById()
 // is the id of the element that we're trying to get.
 
-function updateUserName() {
-  userName = inputElement.value
-}
 
 // Let's set up the event to trigger that function. There are lots of events that we could use, including clicks on elements. But there's also an event triggered anytime you change
 // An input value. To do it, we're going to add an "event listener." On the inputElement variable, use .addEventListener(), and we're going to use 2 parameters. To give multiple
 // parameters, we use a comma to separate them. The first parameter for addEventListener() is the event we want the element to listen for, and the second is the function
 // we want it to trigger.
 
-inputElement.addEventListener("change", updateUserName)
 
 // Lastly, try setting the "innerText" property of your outputElement equal to userName inside your updateUserName() function.
 
