@@ -1,0 +1,36 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+h3, h4, span {
+    font-family: 'Poppins', sans-serif;
+}
+h4, span {
+    font-style: italic;
+}
+.hero {
+    padding: 5%;
+}
+.intro {
+    text-align: center;
+}
+.intro h1 {
+    font-size: 64px;
+}
+.intro h4 {
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.form {
+    padding: 5%;
+    padding-top: 0;
+}
+.form p {
+    font-size: 24px;
+    font-weight: 500;
+    color: hsl(0, 0%, 25%);
+}
+
+.underline {
+    box-shadow: 0 2px hsla(0, 0%, 0%, 0.6);
+}
