@@ -1,0 +1,27 @@
+// Let's create a user object
+
+var User = {
+    firstName: "",
+    lastName: "",
+    age: 18,
+    sayHello: function () {
+        console.log("Hello, my name is ", this.firstName, this.lastName, ".")
+    }
+};
+
+// Let's use our User to make a specific "instance" of one.
+var Kenzie = User;
+
+// To update the information inside an object, you give the name of the object and then add .[PROPERTY NAME]
+Kenzie.age = 23;
+Kenzie.firstName = "McKenzie";
+Kenzie.lastName = "Morgan";
+
+// Now we can have Kenzie greet us with her own information:
+
+Kenzie.sayHello();
+
+// That wasn't too bad, but what if we want to use this user in our other JS files? We need to export it.
+// You can export multiple things from a file, but if you only want to export one thing by default, you do this:
+
+export default User;
