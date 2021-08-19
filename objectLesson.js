@@ -20,8 +20,3 @@ Kenzie.lastName = "Morgan";
 // Now we can have Kenzie greet us with her own information:
 
 Kenzie.sayHello();
-
-// That wasn't too bad, but what if we want to use this user in our other JS files? We need to export it.
-// You can export multiple things from a file, but if you only want to export one thing by default, you do this:
-
-export default User;
