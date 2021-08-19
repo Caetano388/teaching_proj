@@ -9,6 +9,7 @@ h4, span {
 }
 .hero {
     padding: 5%;
+    background-color: hsla(50, 100%, 85%, 0.7);
 }
 .intro {
     text-align: center;
